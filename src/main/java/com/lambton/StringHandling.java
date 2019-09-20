@@ -10,6 +10,7 @@ public class StringHandling
         String s2="HELLO";
         String s3=s1;
 
+
          String s4= new String("HELLO");
          if(s1==s2)
          {
@@ -36,7 +37,7 @@ public class StringHandling
         {
             System.out.println("s1==s4");
         }
-        String collegeName="Lambton college in  Toronto";
+        String collegeName="Lambton college in Toronto";
         collegeName.length();
         collegeName.contains("college");
         collegeName.indexOf("Toronto");
@@ -48,6 +49,23 @@ public class StringHandling
         collegeName.toCharArray();
         collegeName.concat("265 Yorkland Blvd.,Northyork");
 
+        System.out.println("Length is:"+collegeName.length());
+        System.out.println("Contains:"+collegeName.contains("college"));
+        System.out.println("Index of Toronto is:"+collegeName.indexOf("Toronto"));
+        System.out.println("Upper case is:"+collegeName.toUpperCase());
+        System.out.println("Index of Toronto is:"+collegeName.toLowerCase());
+        System.out.println("Replaced:"+collegeName.replace("Toronto","New York"));
+
+        boolean b=collegeName.contains("college");
+        System.out.println(b);
+
+
+        char c[] =collegeName.toCharArray();
+
+        for(int i=0;i<c.length;i++)
+        {
+            System.out.print(c[i]);
+        }
 
     }
 }
