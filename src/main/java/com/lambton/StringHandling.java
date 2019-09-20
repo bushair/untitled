@@ -67,5 +67,15 @@ public class StringHandling
             System.out.print(c[i]);
         }
 
+        char rev[]=new char[c.length];
+        int cnt=0;
+        collegeName.length();
+        for(int i=c.length-1;i>=0;i--)
+        {
+           rev[cnt++]=c[i];
+           String reversestring=new String(rev);
+           System.out.println("REVERSE IS"+reversestring);
+        }
+
     }
 }
